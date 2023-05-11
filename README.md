@@ -1,9 +1,10 @@
 # Play-Store-Review-Analysis
 User reviews for apps can be analyzed to identify if the mood is positive, negative or neutral about that app. For example, positive words in an app review might include words such as 'amazing', 'friendly', 'good', 'great', and 'love'.
-📋 Abstract
-A few thousands of new applications are regularly uploaded on Google play store. A huge number of designers working freely on designing the apps and making them successful. With the enormous challenge from everywhere throughout the globe, it is important for a developer to know whether he/she is continuing the correct way or not. Since most Play Store applications are free, the income model is very obscure and inaccessible regarding how the in-application buys, in-application adverts and memberships add to the achievement of an application. In this way, an application's prosperity is normally dictated by the quantity of installation of the application and the client appraisals that it has gotten over its lifetime instead of the income is created. The objective of this experiment is to deliver insights to understand customer demands better and thus help developers to popularize the product. We have tried to discover the relationships among various attributes such as which application is free or paid, what are the user reviews, rating of the application. -----------------------------------------------------
 
-💾 Project Files Description
+## Abstract
+A few thousands of new applications are regularly uploaded on Google play store. A huge number of designers working freely on designing the apps and making them successful. With the enormous challenge from everywhere throughout the globe, it is important for a developer to know whether he/she is continuing the correct way or not. Since most Play Store applications are free, the income model is very obscure and inaccessible regarding how the in-application buys, in-application adverts and memberships add to the achievement of an application. In this way, an application's prosperity is normally dictated by the quantity of installation of the application and the client appraisals that it has gotten over its lifetime instead of the income is created. The objective of this experiment is to deliver insights to understand customer demands better and thus help developers to popularize the product. We have tried to discover the relationships among various attributes such as which application is free or paid, what are the user reviews, rating of the application.
+
+## Project Files Description
 This Project includes 1 colab notebook, 1 technical documentation as well as 1 presentation:
 
 Executable Files:
@@ -15,12 +16,10 @@ Play Store Data.csv - It contains the basic details of the app like number of us
 User Reviews.csv - It contains the user reviews and its sentiment score for the respective app.
 Data Source:
 Dataset - Dataset taken from Almabetter
------------------------------------------------------
 
-📖 Introduction:
+
+## Introduction:
 In today’s scenario we can see that mobile apps playing an important role in any individual’s life. With enormous challenge from everywhere throughout the globe, it is important for a designer to realize that he/she is continuing in the right way or not. To hold this income and their place in the market the application designers may need to figure out how to stick into their present position. The dataset with 10k Play Store applications is available to analyze the market of android. It can be examined to analysis the different category such as family, communication,entertainment, tools, music, camera etc. In this project we examine the different attributes present in the data set that affect the popularity of the application. We focused on to answer the questions like, what makes an app popular, what should be the price and size of the app, is there some trends in user sentiments. In our data set we have two csv files for data analysis: Play Store data User Reviews At first, we analysis the play store data and in the play store data we have 10841 rows and 13 columns & in the user review data we have 64295 rows and 5 columns of data. We have to take the maximum outcomes from the data which help us to analysis the which type of app is most preferable and comparisons between different insights. Our goal is to filter and make plots accordingly for a better EDA with respect to the final data. We need to explore and analyze the data to discover key factors responsible for app engagement and success.
-
------------------------------------------------------
 
 The contents of Play Store Data are:
 App: It contains the name of the app with a short description (optional).
@@ -42,9 +41,8 @@ Translated_Review: It contains the English translation of the review dropped by 
 Sentiment: It gives the attitude/emotion of the writer. It can be ‘Positive’, ‘Negative’, or ‘Neutral’.
 Sentiment_Polarity: It gives the polarity of the review. Its range is [-1,1], where 1 means ‘Positive statement’ and -1 means a ‘Negative statement’.
 Sentiment_Subjectivity: This value gives how close a reviewer’s opinion is to the opinion of the general public. Its range is [0,1]. Higher the subjectivity, closer is the reviewer’s opinion to the opinion of the general public, and lower subjectivity indicates the review is more of a factual information.
------------------------------------------------------
 
-📋Problem Statements
+# Problem Statements :
 What are the top categories on Play Store?
 Are majority of the apps Paid or Free?
 How importance is the rating of the application?
@@ -62,13 +60,11 @@ How Content Rating affect over the App?
 Does Last Update date has an effects on rating?
 Distribution of App update over the Year.
 Distribution of Paid and Free app updated over the Month.
-📔 What is Exploratory Data Analysis?
+# What is Exploratory Data Analysis?
 Exploratory data analysis (EDA) is used by data scientists to analyze and investigate data sets for patterns, and anomalies (outliers), and form hypotheses based on our understanding of the dataset and summarize their main characteristics, often employing data visualization methods. It is an important step in any Data Analysis or Data Science project. It helps determine how best to manipulate data sources to get the answers you need.
-
 EDA involves generating summary statistics for numerical data in the dataset and creating various graphical representations to understand the data better and make it more attractive and appealing.
 
 The following are the various steps involved in the EDA process:
-
 Problem Statement - We shall brainstorm and understand the given data set. We shall study the attributes present in it and try to do a philosophical analysis about their meaning and importance for this problem.
 Hypothesis - Upon studying the attributes present in the data base, we shall develop some basic hypothesis on which we can work and play with the data to look for the varied results which we can get out of it.
 Univariate Analysis - It is the simplest form of analyzing the data. In this we would initially pick up a single attribute and study it in and out. It doesn't deal with any sort of co-relation and it's major purpose is to describe. It takes data, summarizes that data and finds patterns in the data.
@@ -76,9 +72,8 @@ Bivariate Analysis - This analysis is related to cause and the relationship betw
 Multivariate Analysis - This is done when more than two variables have to be analyzed simultaneously.
 Data Cleaning - We shall clean the dataset and handle the missing data, outliers and categorical variables.
 Testing Hypothesis - We shall check if our data meets the assumptions required by most of the multivariate techniques.
------------------------------------------------------
 
-📖 Steps Involved
+# Steps Involved:
 After loading the dataset, we can start the exploration but before that, we need to check and see that the dataset is ready for performing several exploration operations or not, so let’s first have a look at the structure and the manner in which the data is organized.
 
 Data Cleaning
@@ -104,7 +99,7 @@ Revenue: This column gives the revenue generated by the app through app installs
 Installs
 We analysis the install column to observe the effect of size, price, rating, content rating, android version on app installation number. We can analysis that for each and every category number of app installation does not depend on the size. The free apps installed mostly. The apps which can be used by everyone is more installed than the apps which can be used by a particular age group. Rating of mostly installed apps is between 4 and 5.
 
-🛠 Challenges Faced:
+# Challenges Faced:
 Reading the dataset and comprehending the problem statement. Our major challenge was data cleaning.
 Handling the error, duplicate and NaN values in the dataset.
 13.60% of reviews were NaN values, and even after merging both the dataframes, we could not infer much in order to fill them. Thus we had to drop them.
@@ -114,7 +109,7 @@ There is so much more which can be explored. Like we have current version, andro
 We can explore the correlation between the size of the app and the version of Android on the number of installs.
 Machine learning can help us to deploy more insights by developing models which can help us interpret even more better. We have left this as future work as this is something where we can work on.
 Designing multiple visualizations to summarize the information in the dataset and successfully communicate the results and trends to the reader.
-📋 Conclusion:
+# Conclusion:
 Most of the apps are free so developers should focus on creating free apps to have a huge customer base. If developing paid apps then apps size should not be greater than 40mb. More Apps should be in the category like Events,Beauty,Parenting as they have not been explored much but still quite popular with huge installations. In order to retain the customer base apps should be updated regularly Developers should develop apps such that their content is available for everyone. Bulky apps should be developed in the category like Game, Family. If developing paid apps then its price should not be high and size should be less than 20mb. Apps belonging to Game and Family Category have high negative reviews therefore they should be developed carefully. Like this there can be a lot of conclusions but we have tried to cover the most important ones. These are some of the aspects that the developer should research before proceeding with the app development. By conducting a simple exploratory data analysis (EDA) on the play store dataset, we not only eliminate avoidable risks of failure, but we may also be able to provide better ideas for building the app.
 
 Percentage of free apps = ~92%
